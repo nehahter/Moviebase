@@ -33,3 +33,31 @@ Welcome to MOVIEBASE, a dynamic web application dedicated to movie enthusiasts. 
 
 ## File Structure
 
+/moviebase/
+│
+├── css/
+│ └── style.css # Main stylesheet
+├── js/
+│ └── script.js # JavaScript functions
+├── images/
+│ └── * # All related images and icons
+├── index.html # Entry point of the application
+├── details.php # Movie details page
+└── db_connection.php # Database connection setup
+
+
+## Installation
+
+To install MOVIEBASE on your local machine, follow these steps:
+
+1. **Clone the repository**:
+   ```sh
+   git clone https://github.com/yourusername/moviebase.git
+   cd moviebase
+2. Database Setup:
+Import the moviebase.sql file into your MySQL server to set up the database.
+Configuration
+Database Connection:
+Edit db_connection.php with your MySQL server credentials.
+Usage
+Navigate to the project directory in your web server's document root and open index.html in a web browser to start using MOVIEBASE.

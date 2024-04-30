@@ -31,19 +31,6 @@ Welcome to MOVIEBASE, a dynamic web application dedicated to movie enthusiasts. 
 - **PHP**
 - **MySQL**
 
-## File Structure
-
-/moviebase/
-│
-├── css/
-│ └── style.css # Main stylesheet
-├── js/
-│ └── script.js # JavaScript functions
-├── images/
-│ └── * # All related images and icons
-├── index.html # Entry point of the application
-├── details.php # Movie details page
-└── db_connection.php # Database connection setup
 
 
 ## Installation

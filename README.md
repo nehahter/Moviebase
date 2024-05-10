@@ -1,50 +1,66 @@
-# MOVIEBASE
+# Movie Base
 
-Welcome to MOVIEBASE, a dynamic web application dedicated to movie enthusiasts. This platform provides detailed information about a wide range of movies, enabling users to explore genres, plot summaries, cast details, and much more.
-
-## Table of Contents
-
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [File Structure](#file-structure)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [Screenshots](#screenshots)
-- [License](#license)
-- [Contact](#contact)
+Movie Base is a dynamic web application designed to showcase, review, and like movies. It allows users to interact with movie data, submit reviews, and manage user authentication.
 
 ## Features
 
-- **Advanced Search**: Quickly find movies with robust search functionality.
-- **Movie Details**: Access in-depth details including director, release year, cast, and synopsis.
-- **Responsive Layout**: Tailored for mobiles, tablets, and desktops.
-- **User Ratings and Comments**: Users can leave ratings and comments on movies.
-- **Watchlist**: Users can create watchlists to keep track of their favorite movies.
+MovieBase is a web application built with HTML, CSS, JavaScript, and PHP that provides a user-friendly platform for movie enthusiasts to explore and discover movie information. Key functionalities include:
 
-## Technologies Used
+- **User Authentication**: Users can sign up, sign in, and sign out to personalize their experience.
+- **Movie Details**: Each movie has a dedicated page displaying information like director, writer, synopsis, and user reviews.
+- **Like Toggle**: Users can "like" movies, potentially storing these preferences for future reference.
+- **Review Submission**: Users can submit reviews for movies they've watched.
+- **User Profiles**: User can view their profiles and their interactions (likes, reviews).
+- **Movie Search**: Users can search for movies by title, and the application fetches details of the searched movie.
 
-- **HTML5**
-- **CSS3**
-- **JavaScript**
-- **PHP**
-- **MySQL**
+Please note that some features (like toggle and review submission) might require further development to be fully functional. This README provides a general overview of the current functionalities.
 
+## Prerequisites
 
+Before you begin, ensure you have met the following requirements:
+- PHP 7.x or newer
+- MySQL 5.x or newer
+- Apache/Nginx server
+- Composer (for managing PHP dependencies)
 
 ## Installation
 
-To install MOVIEBASE on your local machine, follow these steps:
+Follow these steps to get your development environment running:
 
-1. **Clone the repository**:
-   ```sh
-   git clone https://github.com/yourusername/moviebase.git
-   cd moviebase
-2. Database Setup:
-Import the moviebase.sql file into your MySQL server to set up the database.
-Configuration
-Database Connection:
-Edit db_connection.php with your MySQL server credentials.
-Usage
-Navigate to the project directory in your web server's document root and open index.html in a web browser to start using MOVIEBASE.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/movie-base.git
+   cd movie-base
+2. **Database Setup**
+- Import the SQL schema located in a file you should add to your project directory (e.g., schema.sql).
+- Configure db_connection.php with your database credentials.
+3. **Run the Server**
+- You can use PHP's built-in server for testing:
+   ```bash
+  php -S localhost:8000
+
+## Installation
+
+Follow these steps to get your development environment running:
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/nehahter/Moviebase.git
+   cd Moviebase
+
+## Contributing
+
+We welcome contributions to improve MovieBase! If you have any bug fixes, feature enhancements, or suggestions, please feel free to create a pull request on GitHub.
+
+**Before contributing:**
+- Make sure you have a GitHub account.
+- Fork the repository to your own GitHub account.
+- Create a new branch for your feature or bug fix.
+- Implement your changes within the branch.
+- Write clear and concise commit messages describing your changes.
+- Submit a pull request to the main repository.
+
+We appreciate your contributions!
+
+
+   

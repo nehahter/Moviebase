@@ -1,3 +1,7 @@
+<?php
+session_start(); 
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -10,8 +14,7 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- Owl Carousel css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <!-- Owl Carousel css-->
 
 
@@ -65,61 +68,61 @@ $conn->close();
             var imageUrl = "";
             switch (movieName) {
                 case "salaar: cease fire - part 1":
-                    imageUrl = "image/home.jpg";
+                    imageUrl = "image/sal1.jpg";//
                     break;
                 case "manjummel boys":
-                    imageUrl = "image/p4.jpg";
+                    imageUrl = "image/boys.jpg"; //
                     break;
                 case "the jungle book":
-                    imageUrl = "image/p1.jpg";
+                    imageUrl = "image/jungle.jpg";//
                     break;
                 case "3 idiots":
-                    imageUrl = "image/p2.jpg";
+                    imageUrl = "image/32.jpg";
                     break;
                 case "avatar":
-                    imageUrl = "image/p3.jpg";
+                    imageUrl = "image/avatar.jpg";//
                     break;
                 case "interstellar":
-                    imageUrl = "image/p18.jpg";
+                    imageUrl = "image/is.jpg";//
                     break;
                 case "khaleja":
-                    imageUrl = "image/p5.jpg";
+                    imageUrl = "image/khaleja2.jpg";//
                     break;
                 case "remo":
-                    imageUrl = "image/p6.jpg";
+                    imageUrl = "image/remo2.jpg";//
                     break;
                 case "attarintiki daredi":
-                    imageUrl = "image/p7.jpg";
+                    imageUrl = "image/ad2.jpg";//
                     break;
                 case "taare zameen par":
-                    imageUrl = "image/p8.jpg";
+                    imageUrl = "image/tzp1.jpg";//
                     break;
                 case "maara":
-                    imageUrl = "image/p9.jpg";
+                    imageUrl = "image/maara2.jpg";//
                     break;
                 case "la la land":
-                    imageUrl = "image/p10.jpg";
+                    imageUrl = "image/lala.jpg";//
                     break;
                 case "train to busan":
-                    imageUrl = "image/p11.jpg";
+                    imageUrl = "image/busan.jpg";//
                     break;
                 case "the batman":
-                    imageUrl = "image/p12.jpg";
+                    imageUrl = "image/bat2.jpg";//
                     break;
                 case "raatchasan":
-                    imageUrl = "image/p13.jpg";
+                    imageUrl = "image/raat.jpg"; //
                     break;
                 case "cadaver":
-                    imageUrl = "image/p14.jpg";
+                    imageUrl = "image/kadavar.jpg";//
                     break;
                 case "andhadhun":
-                    imageUrl = "image/p15.jpg";
+                    imageUrl = "image/andh2.jpg";//
                     break;
                 case "kill boksoon":
-                    imageUrl = "image/p16.jpg";
+                    imageUrl = "image/kbs2.jpg";//
                     break;
                 case "time to hunt":
-                    imageUrl = "image/p17.jpg";
+                    imageUrl = "image/tth.jpg"; //
                     break;
                 default:
                     imageUrl = "image/home.jpg"; // Fallback image
@@ -139,10 +142,10 @@ $conn->close();
 
                     <nav>
                         <ul id="menuitem">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#popular">Most Popular</a></li>
-                        <li><a href="index.html#mostviewed">Most Viewed</a></li>
-                        <li><a href="index.html#crimethrillers">Crime Thrillers</a></li>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="index.php#popular">Popular</a></li>
+                        <li><a href="index.php#drama">Drama</a></li>
+                        <li><a href="index.php#thrillers">Thrillers</a></li>
                         <!-- <li><a href="account.html">Account</a></li> -->
                         </ul>
                     </nav>
@@ -155,8 +158,8 @@ $conn->close();
         <div class="home_content mtop">
             <div class="container">
                 <div class="left">
-                    <h1><?php echo htmlspecialchars($movie['title']);
-                             echo " from php";?></h1>
+                    <h1><?php echo htmlspecialchars($movie['title']);?></h1>
+                            <!-- //  echo " from php"; -->
 
                     <div class="time flex">
                         <label>U</label>
@@ -172,7 +175,7 @@ $conn->close();
                     <!-- <div class="button flex"> -->
                         <!-- <a href="details.html" class="btn">PLAY NOW</a>
                         <i id="palybtn" class="fas fa-play"></i> -->
-                        <p><a href="https://www.youtube.com/watch?v=4GPvYMKtrtI" class="btn">WATCH TRAILER</a></p>
+                        <p><a href="<?php echo htmlspecialchars($movie['trailer']); ?>" class="btn" target="_blank">WATCH TRAILER</a></p>
                     <!-- </div> -->
 <br>
 
@@ -185,8 +188,8 @@ $conn->close();
                        <h2><li>Genre: <?php echo htmlspecialchars($movie['genre']); ?></li></h2>
                        <h2><li>IMDB Rating: <?php echo htmlspecialchars($movie['imdb']); ?></li></h2>
                        <h2><li>Language: <?php echo htmlspecialchars($movie['language']); ?></li></h2>
-                       <h2><li>Directed by: <?php echo htmlspecialchars($movie['Directed by']); ?></li></h2>
-                       <h2><li>Written by: <?php echo htmlspecialchars($movie['Written by:']); ?></li></h2>
+                       <h2><li>Directed by: <?php echo htmlspecialchars($movie['Directed_by']); ?></li></h2>
+                       <h2><li>Written by: <?php echo htmlspecialchars($movie['Written_by']); ?></li></h2>
                        <h2><li>Watch Options: <?php echo htmlspecialchars($movie['watchoptions']); ?></li></h2>
                     </ul>
                     </div>

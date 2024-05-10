@@ -62,5 +62,8 @@ We welcome contributions to improve MovieBase! If you have any bug fixes, featur
 
 We appreciate your contributions!
 
+---
+For more information, contributions, or inquiries, please visit our [GitHub Repository](https://github.com/nehahter/Moviebase) or contact us directly through our project's page.
+
 
    

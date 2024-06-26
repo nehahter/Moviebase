@@ -19,9 +19,12 @@ MovieBase is a web application built with HTML, CSS, JavaScript, and PHP that pr
 
 Please note that some features (like toggle and review submission) might require further development to be fully functional. This README provides a general overview of the current functionalities.
 
-![](./screenshots/Screenshot%20(267).png)
 
-![](./screenshots/Screenshot%20(269).png)
+![](Screenshot%20(802).png)
+
+![](Screenshot%20(803).png)
+
+![](Screenshot%20(804).png)
 
 
 ## Prerequisites
@@ -31,6 +34,11 @@ Before you begin, ensure you have met the following requirements:
 - MySQL 5.x or newer
 - Apache/Nginx server
 - Composer (for managing PHP dependencies)
+
+  
+![](./screenshots/Screenshot%20(267).png)
+
+![](./screenshots/Screenshot%20(269).png)
 
 ## Installation
 

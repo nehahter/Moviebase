@@ -2,7 +2,7 @@
 
 Movie Base is a dynamic web application designed to showcase, review, and like movies. It allows users to interact with movie data, submit reviews, and manage user authentication.
 
-![](screenshots/Screenshot-(266).png)
+![](Screenshot-(266).png)
 
 ## Features
 

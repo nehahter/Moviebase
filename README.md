@@ -3,6 +3,9 @@
 Movie Base is a dynamic web application designed to showcase, review, and like movies. It allows users to interact with movie data, submit reviews, and manage user authentication.
 
 ![](./screenshots/Screenshot%20(266).png)
+
+![](./screenshots/Screenshot%20(276).png)
+
 ## Features
 
 MovieBase is a web application built with HTML, CSS, JavaScript, and PHP that provides a user-friendly platform for movie enthusiasts to explore and discover movie information. Key functionalities include:
@@ -15,6 +18,11 @@ MovieBase is a web application built with HTML, CSS, JavaScript, and PHP that pr
 - **Movie Search**: Users can search for movies by title, and the application fetches details of the searched movie.
 
 Please note that some features (like toggle and review submission) might require further development to be fully functional. This README provides a general overview of the current functionalities.
+
+![](./screenshots/Screenshot%20(267).png)
+
+![](./screenshots/Screenshot%20(269).png)
+
 
 ## Prerequisites
 
